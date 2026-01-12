@@ -28,7 +28,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "alacritty",     NULL,       NULL,       0,            0,           -1 },
-	{ "hiddify",  	   NULL,       NULL,       1 << 7,       0,           -1 }, 
+	{ "Hiddify",  	   NULL,       NULL,       1 << 7,       1,           -1 }, 
 	{ "zen",  	   NULL,       NULL,       1 << 1,       0,           -1 }, 
 };
 
