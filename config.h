@@ -95,26 +95,6 @@ static const char *dimmer[]   = { "brightnessctl", "set", "10%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
- 	{ MODKEY|ShiftMask,                XK_h,      setcfact,       {.f = +0.25} },
- 	{ MODKEY|ShiftMask,                XK_l,      setcfact,       {.f = -0.25} },
- 	{ MODKEY|ShiftMask,                XK_o,      setcfact,       {.f =  0.00} },
- 	{ MODKEY|ControlMask,              XK_u,      incrgaps,       {.i = +3 } },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_u,      incrgaps,       {.i = -3 } },
- 	{ MODKEY|ControlMask,              XK_i,      incrigaps,      {.i = +3 } },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_i,      incrigaps,      {.i = -3 } },
- 	{ MODKEY|ControlMask,              XK_o,      incrogaps,      {.i = +3 } },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_o,      incrogaps,      {.i = -3 } },
- 	{ MODKEY|ControlMask,              XK_6,      incrihgaps,     {.i = +3 } },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_6,      incrihgaps,     {.i = -3 } },
- 	{ MODKEY|ControlMask,              XK_7,      incrivgaps,     {.i = +3 } },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_7,      incrivgaps,     {.i = -3 } },
- 	{ MODKEY|ControlMask,              XK_8,      incrohgaps,     {.i = +3 } },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_8,      incrohgaps,     {.i = -3 } },
- 	{ MODKEY|ControlMask,              XK_9,      incrovgaps,     {.i = +3 } },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_9,      incrovgaps,     {.i = -3 } },
- 	{ MODKEY|ControlMask,              XK_0,      togglegaps,     {0} },
- 	{ MODKEY|ControlMask|ShiftMask,    XK_0,      defaultgaps,    {0} },
-
 	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
  	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -160,6 +140,27 @@ static const Key keys[] = {
 
 	{ 0,         			XK_Print, spawn, SHCMD("/home/marsho/bin/screenshot.sh") },
  	{ ShiftMask, 			XK_Print, spawn, SHCMD("/home/marsho/bin/screenshotsel.sh") },
+
+ 	{ MODKEY|ShiftMask,                XK_h,      setcfact,       {.f = +0.25} },
+ 	{ MODKEY|ShiftMask,                XK_l,      setcfact,       {.f = -0.25} },
+ 	{ MODKEY|ShiftMask,                XK_o,      setcfact,       {.f =  0.00} },
+ 	{ MODKEY|ControlMask,              XK_u,      incrgaps,       {.i = +3 } },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_u,      incrgaps,       {.i = -3 } },
+ 	{ MODKEY|ControlMask,              XK_i,      incrigaps,      {.i = +3 } },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_i,      incrigaps,      {.i = -3 } },
+ 	{ MODKEY|ControlMask,              XK_o,      incrogaps,      {.i = +3 } },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_o,      incrogaps,      {.i = -3 } },
+ 	{ MODKEY|ControlMask,              XK_6,      incrihgaps,     {.i = +3 } },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_6,      incrihgaps,     {.i = -3 } },
+ 	{ MODKEY|ControlMask,              XK_7,      incrivgaps,     {.i = +3 } },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_7,      incrivgaps,     {.i = -3 } },
+ 	{ MODKEY|ControlMask,              XK_8,      incrohgaps,     {.i = +3 } },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_8,      incrohgaps,     {.i = -3 } },
+ 	{ MODKEY|ControlMask,              XK_9,      incrovgaps,     {.i = +3 } },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_9,      incrovgaps,     {.i = -3 } },
+ 	{ MODKEY|ControlMask,              XK_0,      togglegaps,     {0} },
+ 	{ MODKEY|ControlMask|ShiftMask,    XK_0,      defaultgaps,    {0} },
+
 };
 
 /* button definitions */
